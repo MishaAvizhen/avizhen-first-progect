@@ -1,6 +1,6 @@
 {
-  "name": "avizhen-first-project",
-  "version": "0.0.0",
+  "name": "Library",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
