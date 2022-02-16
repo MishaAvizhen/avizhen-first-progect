@@ -1,10 +1,12 @@
 export class Book {
-  id?: number
-  name?:string
-  author?: string
-
-  constructor(name: string, author:string) {
-    this.name = name;
-    this.author = author;
+  constructor( public id: number,
+               public title:string,
+               public authorId:number,
+               public genre:string,
+               public publishingHouse: string,
+               public publicationDate:Date,
+               public bookCover:string,
+               public note:string,
+               public count:number) {
   }
 }

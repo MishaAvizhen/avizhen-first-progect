@@ -1,19 +1,35 @@
-<h1>Library Avizhen</h1>
-<div class="books" style="height: 500px">
+<div class="container">
+  <h1>Library Avizhen</h1>
+  <h3>Books</h3>
+  <div>
+    <button class="add_btn">Add book</button>
+  </div>
+  <div class="books">
     <table border="2px">
       <thead>
       <th>id</th>
-      <th>name</th>
-      <th>author</th>
+      <th>title</th>
+      <th>authorId</th>
+      <th>genre</th>
+      <th>publishingHouse</th>
+      <th>publicationDate</th>
+      <th>bookCover</th>
+      <th>note</th>
+      <th>count</th>
       </thead>
       <tbody>
       <tr *ngFor="let book of books" class="book-name">
         <td>{{book.id}}</td>
-        <td>{{book.name}}</td>
-        <td>{{book.author}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.authorId}}</td>
+        <td>{{book.genre}}</td>
+        <td>{{book.publishingHouse}}</td>
+        <td>{{book.publicationDate}}</td>
+        <td>{{book.bookCover}}</td>
+        <td>{{book.note}}</td>
+        <td>{{book.count}}</td>
       </tr>
       </tbody>
     </table>
-
   </div>
-
+</div>
