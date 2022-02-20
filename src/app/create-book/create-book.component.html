@@ -1,0 +1,42 @@
+
+  <h3>Create Book</h3>
+<form>
+
+  <div class="form-group">
+    <label>Title:</label>
+    <input type="text" [(ngModel)]="book.title" class="form-control"  name="title" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label>Author id:</label>
+    <input type="text" [(ngModel)]="book.authorId" class="form-control" placeholder="id">
+  </div>
+  <div class="form-group">
+    <label>Genre:</label>
+    <input type="text" [(ngModel)]="book.genre" class="form-control" placeholder="genre">
+  </div>
+  <div class="form-group">
+    <label>Publishing house:</label>
+    <input type="text" [(ngModel)]="book.publishingHouse" class="form-control" placeholder="house">
+  </div>
+  <div class="form-group">
+    <label>Date:</label>
+    <input type="date" [(ngModel)]="book.publicationDate" class="form-control" placeholder="date">
+  </div>
+  <div class="form-group">
+    <label>Cover:</label>
+    <input type="text" [(ngModel)]="book.bookCover" class="form-control" placeholder="cover">
+  </div>
+  <div class="form-group">
+    <label>Note:</label>
+    <input type="text" [(ngModel)]="book.note" class="form-control" placeholder="note">
+  </div>
+  <div class="form-group">
+    <label>Count:</label>
+    <input type="text" [(ngModel)]="book.count" class="form-control" placeholder="count">
+  </div>
+
+  <div class="form-group">
+    <button  (click)="createBook()">Create Book</button>
+  </div>
+
+</form>

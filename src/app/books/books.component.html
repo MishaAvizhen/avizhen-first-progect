@@ -1,9 +1,6 @@
 <div class="container">
-  <h1>Library Avizhen</h1>
+
   <h3>Books</h3>
-  <div>
-    <button class="add_btn">Add book</button>
-  </div>
   <div class="books">
     <table border="2px">
       <thead>
@@ -16,6 +13,7 @@
       <th>bookCover</th>
       <th>note</th>
       <th>count</th>
+      <th>Action</th>
       </thead>
       <tbody>
       <tr *ngFor="let book of books" class="book-name">
@@ -28,6 +26,10 @@
         <td>{{book.bookCover}}</td>
         <td>{{book.note}}</td>
         <td>{{book.count}}</td>
+        <td>
+          <a [routerLink]="['/update', book.id]">Update</a> &nbsp;
+          <button  (click)="deleteBook(book)"> Delete</button>
+        </td>
       </tr>
       </tbody>
     </table>
